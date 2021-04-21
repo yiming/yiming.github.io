@@ -7,13 +7,19 @@
             <div class="col-md-10 d-flex flex-column">
                 <ul class="nav justify-content-between justify-content-md-end">
                     <li class="nav-item">
-                      <a class="nav-link text-light" href="#"><i class="fas fa-user"></i></a>
+                      <a class="nav-link text-light" href="member.html" title="會員"><i class="fas fa-user"></i></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-light" href="#"><i class="fas fa-shopping-cart"></i></a>
+                      <a class="nav-link text-light" href="cart.html" title="購物"><i class="fas fa-shopping-cart"></i></a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-light" href="#"><i class="fas fa-globe"></i></a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link text-light dropdown-toggle" data-bs-toggle="dropdown" href="#" title="語系"><i class="fas fa-globe"></i></a>
+                      <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">繁體中文</a></li>
+                        <li><a class="dropdown-item" href="#">簡体中文</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">日本語</a></li>
+                      </ul>
                     </li>
                     <li class="nav-item">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,28 +30,37 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mt-auto">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="index.html">首頁</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="about.html">簡介</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="news.html">訊息</a>
                       </li>
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
+                        <a class="nav-link dropdown-toggle" href="prod.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          產品
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><h6><small class="text-muted ps-2">生活用品</small></h6></li>
+                          <li><a class="dropdown-item" href="prod-cat.html">產品分類一</a></li>
+                          <li><a class="dropdown-item" href="prod-cat.html">產品分類二</a></li>
+                          <li><a class="dropdown-item" href="prod-cat.html">產品分類三</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          <li><h6><small class="text-muted ps-2">電器用品</small></h6></li>
+                          <li><h5>電器用品</h5></li>
+                          <li><a class="dropdown-item" href="prod-cat.html">產品分類四</a></li>
+                          <li><a class="dropdown-item" href="prod-cat.html">產品分類五</a></li>
+                          <li><a class="dropdown-item" href="prod-cat.html">產品分類六</a></li>
                         </ul>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="contact.html">聯絡</a>
                       </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-  </nav>
+</nav>
