@@ -10,12 +10,76 @@
 
     <title>Hello Spring</title>
 </head>
-<body>
+<body class="home">
     <div w3-include-html="comp_nav.html"></div>
     <div w3-include-html="comp_header_home.html"></div>
-    <main>main</main>
-    <div w3-include-html="comp_footer.html"></div>
-    
+    <main>
+        <!-- section.sec$*5>.container>.row>.col-md-4{col$}*3 -->
+        <section class="sec1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <img src="images/sec1-svg1.svg" alt="">
+                        <h4>Heading 1</h4>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="images/sec1-svg2.svg" alt="">
+                        <h4>Heading 2</h4>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur</p>                       
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="images/sec1-svg3.svg" alt="">
+                        <h4>Heading 3</h4>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec2">
+            <div class="">
+                <div class="row">
+                    <div class="col-sm-4 col-lg-6">
+                        <img class="img-div w-100" src="images/sec2-img1.jpg" alt="">
+                    </div>
+                    <div class="col-sm-8 col-lg-6 p-4 p-md-2 p-lg-0 pt-lg-4">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolorum eligendi rerum non sed aut qui harum placeat laborum! Voluptate blanditiis cupiditate iure quasi debitis recusandae. Explicabo laudantium delectus qui.</p>
+                        <div> <a href="#" class="btn btn-primary">More...</a> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">col1</div>
+                    <div class="col-md-4">col2</div>
+                    <div class="col-md-4">col3</div>
+                </div>
+            </div>
+        </section>
+        <section class="sec4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">col1</div>
+                    <div class="col-md-4">col2</div>
+                    <div class="col-md-4">col3</div>
+                </div>
+            </div>
+        </section>
+        <section class="sec5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">col1</div>
+                    <div class="col-md-4">col2</div>
+                    <div class="col-md-4">col3</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div w3-include-html="comp_footer.html"></div>    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="assets/jquery-3.6.0.min.js"></script>
     <script src="assets/bs5/js/bootstrap.bundle.min.js"></script>
