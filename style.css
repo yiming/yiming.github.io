@@ -6,6 +6,10 @@ body{
         padding-top:119px;
     }    
 }
+.order-6 {order: 6!important;}
+.order-7 {order: 7!important;}
+.order-8 {order: 8!important;}
+.order-9 {order: 9!important;}
 .navbar {
     background-color: #560737 !important;
 }
@@ -62,6 +66,10 @@ footer ul.nav.social{
     font-size:2em;
 }
 
+.sec1, .sec2, .sec3, .sec4, .sec5{
+    position:relative;
+}
+
 body.home .sec1 img{
     max-width: 200px;
     margin: 1em;
@@ -106,3 +114,47 @@ body.home .sec2 h2::first-letter{
     }
 }
 
+.sec3{
+    background-color: #bef7be;
+    color: #2a5848;
+    background-image: url(images/sec3-bg3.svg),url(images/sec3-bg3.svg);
+    background-position: 50% 0, 50% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+.sec3 .item{
+    background-color: #fafaad;
+} 
+@media screen and (min-width:576px) {
+    .sec3 {
+        background-image: url(images/sec3-bg1.svg), url(images/sec3-bg2.svg), url(images/sec3-bg3.svg);
+        background-position: -4% 0 , 104% 0, 50% 0;
+    }
+    .sec3::before,.sec3::after{
+        content: " ";
+        display: block;
+        position: absolute;
+        z-index: 999;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .sec3::before {
+        right: 40px;
+        top: -70px;
+        z-index: 999;
+        width: 200px;
+        height: 200px;
+        background-image: url(images/sec3-bg4.svg);
+    }
+    .sec3::after{
+        left: 20px;
+        bottom: -120px;
+        z-index: 999;
+        width: 200px;
+        height: 200px;
+        background-image: url(images/sec3-bg5.svg);
+    }
+}
+.sec4 img.img-fluid.rounded-circle{
+    object-fit: cover;
+}
