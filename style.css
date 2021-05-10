@@ -1,6 +1,17 @@
 body{
     padding-top:159px;
+    --aa : #F6F;
 }
+body.about{
+    --aa : #6FF;
+}
+body.about .container{
+    --aa : #FF6;
+}
+h1,h2{
+    background-color: var(--aa);
+}
+
 @media screen and (min-width:768px) {
     body{
         padding-top:119px;
@@ -53,7 +64,10 @@ footer a:hover{
     display: block;
 } */
 footer .sitemap .list-group-item{
-    background-color: rgba(255,255,255,0.6);
+    background-color: transparent;
+}
+footer .list-group-item{
+    border:0 none;
 }
 footer>.sitemap{
     background-color: #FFA;
@@ -115,7 +129,7 @@ body.home .sec2 h2::first-letter{
     }
 }
 
-.sec3{
+body.home .sec3{
     background-color: #bef7be;
     color: #2a5848;
     background-image: url(images/sec3-bg3.svg),url(images/sec3-bg3.svg);
@@ -123,15 +137,15 @@ body.home .sec2 h2::first-letter{
     background-repeat: no-repeat;
     background-size: contain;    
 }
-.sec3 .item{
+body.home .sec3 .item{
     background-color: #fafaad;
 } 
 @media screen and (min-width:576px) {
-    .sec3 {
+    body.home .sec3 {
         background-image: url(images/sec3-bg1.svg), url(images/sec3-bg2.svg), url(images/sec3-bg3.svg);
         background-position: -4% 0 , 104% 0, 50% 0;
     }
-    .sec3::before,.sec3::after{
+    body.home .sec3::before,.sec3::after{
         content: " ";
         display: block;
         position: absolute;
@@ -139,7 +153,7 @@ body.home .sec2 h2::first-letter{
         background-repeat: no-repeat;
         background-size: contain;
     }
-    .sec3::before {
+    body.home .sec3::before {
         right: 40px;
         top: -70px;
         z-index: 999;
@@ -147,7 +161,7 @@ body.home .sec2 h2::first-letter{
         height: 200px;
         background-image: url(images/sec3-bg4.svg);
     }
-    .sec3::after{
+    body.home .sec3::after{
         left: 20px;
         bottom: -120px;
         z-index: 999;
@@ -156,7 +170,7 @@ body.home .sec2 h2::first-letter{
         background-image: url(images/sec3-bg5.svg);
     }
 }
-.sec4 {
+body.home .sec4 {
     background-color: #f5e2c7;
     background-image: url(images/sec4-bg1.png),url(images/sec4-bg2.png);
     background-repeat: no-repeat;
@@ -164,10 +178,10 @@ body.home .sec2 h2::first-letter{
     background-attachment: fixed;
 }
 
-.sec4 img.img-fluid.rounded-circle{
+body.home .sec4 img.img-fluid.rounded-circle{
     object-fit: cover;
 }
-.sec4 img.img-mask{
+body.home .sec4 img.img-mask{
     -webkit-mask-image: url(images/sec4-mask.svg);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: contain;
@@ -177,30 +191,30 @@ body.home .sec2 h2::first-letter{
     mask-size: contain;
     mask-position: center center;
 }
-.sec4 .moveup{
+body.home .sec4 .moveup{
     margin-top:-100px;
 }
-.sec5{
+body.home .sec5{
     background-image: url(images/sec5-bg.jpg);
     background-attachment: fixed;
 }
 @media screen and (min-width:991px) {
-    .sec5{
+    body.home .sec5{
         padding: 100px 0;
     }
     
 }
-.sec5 .row>div{
+body.home .sec5 .row>div{
     overflow: hidden;
     position: relative;
 }
-.sec5 .row>div img{
+body.home .sec5 .row>div img{
     transition: all .4s;
 }
-.sec5 .row>div:hover img{
+body.home .sec5 .row>div:hover img{
     transform: scale(1.2);
 }
-.sec5 .row>div .text {
+body.home .sec5 .row>div .text {
     background-color: rgba(0,0,0,0.5);
     color: #FFF;
     padding: 0;
@@ -215,13 +229,13 @@ body.home .sec2 h2::first-letter{
     transition: all 0.8s;
     overflow: hidden;
 }
-.sec5 .row>div:nth-child(2n) .text{
+body.home .sec5 .row>div:nth-child(2n) .text{
     top: 100%;
     left: 100%;
     right: 0;
     bottom: 0;
 }
-.sec5 .row>div:hover .text{
+body.home .sec5 .row>div:hover .text{
     /*transform:translate(0, 0);*/
     /* opacity:1; */
     top: 0;
@@ -230,3 +244,26 @@ body.home .sec2 h2::first-letter{
     left:0;
     padding: 1em;
 }
+
+body.about {
+
+}
+
+.avatar {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body.news .table-striped{
+    --bs-table-striped-bg : #CCC;
+    --bs-table-striped-color : #333;
+}
+/* body.news .table-striped>tbody>tr:nth-of-type(odd) {
+    background-color:#d162a5;
+    color: #F00;;
+} */
