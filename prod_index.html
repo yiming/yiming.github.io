@@ -14,7 +14,88 @@
     <div w3-include-html="comp_nav.html"></div>
     <div w3-include-html="comp_header_home.html"></div>
     <main>
-        prod_index.html
+        <div class="container">
+            <h1 class="text-center mt-4 text-primary">產品列表</h1>
+            <div class="row">
+                <div class="col-lg-10 order-lg-2">
+
+                    <div class="row">
+                        <div class="card col-md-4">
+                            <img src="images/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">產品名稱</h5>
+                              <ul class="list-unstyled">
+                                  <li> <strong>規格:</strong>ABCDEFG</li>
+                                  <li> <strong>價格:</strong>$100</li>
+                              </ul>
+                              <input type="number" class="form-control mb-2"  value="1" step="2" min="1" max="20">
+                              <a href="#" class="btn btn-primary">購買</a>
+                              <a href="prod_detail.html" class="btn btn-outline-primary">查看</a>
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <img src="images/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <img src="images/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <img src="images/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <img src="images/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card col-md-4">
+                            <img src="images/img2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="pagination justify-content-end me-3">
+                            <li class="page-item disabled">
+                                <span class="page-link">上頁</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="./prod_index.html?cat=1&page=1">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="./prod_index.html?cat=1&page=2">2</a></li>
+                            <li class="page-item"><a class="page-link" href="./prod_index.html?cat=1&page=3">3</a></li>
+                            <li class="page-item"><a class="page-link" href="./prod_index.html?cat=1&page=4">4</a></li>
+                            <li class="page-item"><a class="page-link" href="./prod_index.html?cat=1&page=5">5</a></li>
+                            <li class="page-item"><a class="page-link" href="./prod_index.html?cat=1&page=6">6</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">下頁</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2 order-lg-1">
+                    <div w3-include-html="comp_prod_side.html"></div> 
+                </div>
+            </div>
+        </div>
     </main>
     <div w3-include-html="comp_footer.html"></div>    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
