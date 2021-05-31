@@ -18,21 +18,61 @@
             <div class="row justify-content-center">
                 <div class="col-md-10">
                     <h1 class="text-primary">聯絡我們</h1>
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <form action="./contact_form.html" method="POST">
+                        <div class="row mb-3">
+                            <div class="col-3"><label class="form-label" for="subject">主題</label> </div>
+                            <div class="col-9"><input class="form-control" type="text" id="subject" name="subject"> </div>
                         </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        <div class="row mb-3">
+                            <div class="col-3"><label class="form-label" for="type">問題類別</label> </div>
+                            <div class="col-9">
+                                <select name="type" id="type" class="form-select">
+                                    <option value="1">訂單問題</option>
+                                    <option value="2">會員權益</option>
+                                    <option value="3">合作提案</option>
+                                    <option value="4">其它問題</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        <div class="row mb-3">
+                            <div class="col-3"><label class="form-label" for="name">姓名*</label> </div>
+                            <div class="col-9"><input class="form-control" type="text" id="name" name="name" required> </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="row mb-3">
+                            <div class="col-3"><label class="form-label" for="phone">電話*</label> </div>
+                            <div class="col-9">
+                                <input class="form-control" type="tel" id="phone" name="phone" placeholder="電話號碼格式:0123-23456789" required>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-3"><label class="form-label" for="email">EMAIL</label> </div>
+                            <div class="col-9"><input class="form-control" id="email" name="email" type="email" placeholder="請輸入EMAIL"> </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-3">
+                                聯絡時間:
+                            </div>
+                            <div class="col-9">
+                                <!-- (input:checkbox+label)*3 -->
+                                <input type="checkbox" name="time1" id="time1" value="yes"><label for="time1">上午</label>
+                                <input type="checkbox" name="time2" id="time2" value="yes"><label for="time2">下午</label>
+                                <input type="checkbox" name="time3" id="time3" value="yes"><label for="time3">晚上</label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-3">
+                                偏好方式:
+                            </div>
+                            <div class="col-9">
+                                <input type="radio" name="contact" id="contact1" value="EMAIL"><label for="contact1">EMAIL</label>
+                                <input type="radio" name="contact" id="contact2" value="電話"><label for="contact2">電話</label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-3"><label class="form-label" for="message">留言內容</label> </div>
+                            <div class="col-9"><textarea name="message" id="message" cols="40" rows="10"></textarea> </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">送出表單</button>
                     </form>
                 </div>
             </div>

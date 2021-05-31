@@ -312,6 +312,15 @@ body.news .table-striped{
     --bs-table-striped-bg : #CCC;
     --bs-table-striped-color : #333;
 }
+body.prod.p02 .price>.original{
+    color: #999;
+    text-decoration: line-through;
+}
+body.prod.p02 .price>.onsale{
+    color: #c70079;
+    font-size: 2em;
+    font-weight: bold;
+}
 /* body.news .table-striped>tbody>tr:nth-of-type(odd) {
     background-color:#d162a5;
     color: #F00;;

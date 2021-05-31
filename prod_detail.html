@@ -33,6 +33,10 @@
                         <div class="col-md-6">
                             <div class="prod-info">
                                 <h4 class="text-primary">產品名稱</h4>
+                                <div class="price">
+                                    <span class="original">$300</span>
+                                    <span class="onsale">$280</span>
+                                </div>
                                 <p>綠色回憶宣傳聽說，種種特價，讓她這樣房。</p>
                                 <ul>
                                     <li>生存重點一款輸出一。</li>
@@ -41,21 +45,44 @@
                                 </ul>
                             </div>
                             <div class="add-cart">
-                                <form action="prod_detail.html">
-                                    <div class="mb-3">
-                                      <label for="input1" class="form-label">Email address</label>
-                                      <input type="text" class="form-control" id="input1" name="input1" aria-describedby="emailHelp">
-                                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                <form action="prod_detail.html" method="POST">
+                                    <div class="mb-3 row">
+                                        <div class="col-3">
+                                            <label for="color">顏色:</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <select class="form-select" aria-label="選擇產品顏色" id="color" name="color">
+                                                <option value="" selected>選擇產品顏色</option>
+                                                <option value="BK">黑色</option>
+                                                <option value="WT">白色</option>
+                                                <option value="RD">紅色</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <div class="col-3"><label for="size">尺寸:</label></div>
+                                        <div class="col-9">
+                                            <select class="form-select col-8" aria-label="選擇產品尺寸" id="size" name="size">
+                                                <option value="" selected>選擇產品尺寸</option>
+                                                <option value="S">小</option>
+                                                <option value="M">中</option>
+                                                <option value="L">大</option>
+                                                <option value="XL">特大</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <div class="col-3">
+                                            <label for="qty">數量:</label>
+                                        </div>
+                                        <div class="col-9">
+                                            <input type="number" class="form-control" id="qty" name="qty" value="1">
+                                        </div>
                                     </div>
                                     <div class="mb-3">
-                                      <label for="input2" class="form-label">Password</label>
-                                      <input type="text" class="form-control" id="input2" name="input2">
-                                    </div>
-                                    <div class="mb-3 form-check">
-                                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button class="btn btn-primary" type="submit">加入購物車</button>
+                                    </div>  
+                                    <input type="hidden" id="modelno" name="modelno" value="U12345">                                  
                                 </form>
                             </div>
                         </div>
@@ -98,7 +125,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-lg-2 order-lg-1">
                     <div w3-include-html="comp_prod_side.html"></div> 
