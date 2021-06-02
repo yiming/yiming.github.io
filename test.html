@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="assets/bs5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick-1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <h1>SLICK JS</h1>
+
+    <div class="container bg-secondary">
+        <div class="row">
+            <div class="col-10 p-5">
+                <div class="slick">
+                    <div> <img class="img-fluid" src="images/sec-1@2x.jpg" alt=""> </div>
+                    <div> <img class="img-fluid" src="images/sec-2@2x.jpg" alt=""> </div>
+                    <div> <img class="img-fluid" src="images/sec-7@2x.jpg" alt=""> </div>
+                    <div> <img class="img-fluid" src="images/sec-8@2x.jpg" alt=""> </div>
+                    <div> <img class="img-fluid" src="images/sec-9@2x.jpg" alt=""> </div>
+                    <div> <img class="img-fluid" src="images/sec-4@2x.jpg" alt=""> </div>
+                    <div> <img class="img-fluid" src="images/sec-5@2x.jpg" alt=""> </div>
+                    <div> <img class="img-fluid" src="images/sec-6@2x.jpg" alt=""> </div>
+                    <div> <img class="img-fluid" src="images/sec-7@2x.jpg" alt=""> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+    <script src="assets/bs5/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/slick-1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){ // jquery事件, 其中程式碼會在: 頁面載入完成後執行
+            $('.slick').slick({ // $('.slick') : $:jquery , 
+                    // ".slick": 類似CSS命名(選取器), 指定作用對像
+                    // .slick({...}) : .slick() : slick.js的指令
+                infinite: true,         // {....} slick.js各效果 個別選項
+                slidesToShow: 3,        // {a:1,b:2,c:3} 代表有abc三選項, 值分別為:123
+                slidesToScroll: 3,
+                dots: true,
+                speed: 500
+            });
+        });
+    </script>
+</body>
+</html>

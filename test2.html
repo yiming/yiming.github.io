@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link href="assets/bs5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/fancybox-master/dist/jquery.fancybox.min.css">
+</head>
+<body>
+    <h1>fancy box</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <a class="fancy" href="images/sec-2@2x.jpg"  data-caption="圖片說明">
+                    <img class="img-fluid" src="images/sec-2@2x.jpg" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/jquery-3.6.0.min.js"></script>
+    <script src="assets/bs5/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("a.fancy").fancybox({
+                buttons: ["close"]
+           });
+        });
+    </script>
+</body>
+</html>
